@@ -53,7 +53,7 @@
 
     filetype plugin indent on " Automatically detect file types.
     syntax on                 " syntax highlighting
-    set mouse=a               " automatically enable mouse usage
+   " set mouse=a               " automatically enable mouse usage
     set virtualedit=all       " allow for cursor beyond last character
     set history=1000          " Store a ton of history (default is 20)
     set hidden                " allow buffer switching without saving
@@ -104,7 +104,7 @@
     set scrolloff=3                " minimum lines to keep above and below cursor
     set list                       " use the listchars settings
     set listchars=tab:▸\           " show tabs
-  "  set colorcolumn=81
+    set colorcolumn=101
     "color is for lucius dark
     hi ColorColumn guibg=#292929
 
@@ -167,6 +167,10 @@
     map <leader>v "+gP
     map <leader>c "+y
 
+    " Save 
+    map <C-s> :w<cr>
+    imap <C-s> <ESC>:w<cr>a
+     
     " Ctrl-a for select all
     map <C-A> ggVG
 
