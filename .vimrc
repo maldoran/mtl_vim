@@ -241,6 +241,10 @@
         "let g:pdv_cfg_License=""
     " }
 
+    " ctrlp {
+        let g:ctrlp_show_hidden = 1
+    " }
+
 " }
 
 " Functions {
