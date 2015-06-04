@@ -128,6 +128,11 @@
 
 " }
 
+" command shortcuts {
+    " Write and close the buffer
+    :command! WQ w|bd
+" }
+
 " Key (re)Mappings {
 
     " Making it so ; works like : for commands. Saves typing and eliminates :W style typos due to lazy holding shift.
@@ -181,6 +186,10 @@
 
     " Ctrl-b for fuzzy-buffer match
     map <C-B> :FufBuffer<CR>
+    imap <C-B> <Esc>:FufBuffer<CR>
+
+    " delete line
+    map <C-d> dd
 
     " For when you forget to sudo.. Really Write the file.
     cmap w!! w !sudo tee % >/dev/null
