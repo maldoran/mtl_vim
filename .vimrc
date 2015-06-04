@@ -47,6 +47,8 @@
     Bundle 'shawncplus/phpcomplete.vim'
     Bundle 'EvanDotPro/php_getset.vim'
     Bundle 'mikehaertl/pdv-standalone'
+
+    Bundle 'saltstack/salt-vim'
 " }
 
 " General {
