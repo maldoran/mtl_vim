@@ -108,7 +108,7 @@
     "set scrolljump=5               " lines to scroll when cursor leaves screen
     set scrolloff=3                " minimum lines to keep above and below cursor
     set list                       " use the listchars settings
-    set listchars=tab:▸\           " show tabs
+    set listchars=tab:»\           " show tabs
     set colorcolumn=101
     "color is for lucius dark
     hi ColorColumn guibg=#292929
