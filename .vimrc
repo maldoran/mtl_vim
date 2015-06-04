@@ -195,9 +195,6 @@
     cmap w!! w !sudo tee % >/dev/null
     "nmap <silent> <leader>www :w!!<CR> " this causes a nasty delay before saving
 
-    " Toggle numbers.vim
-    nnoremap <F3> :NumbersToggle<CR>
-
     " Support buffer switch on tab even if MiniBufExplorer is not used
    " if !vundle#hasBundle('minibufexpl') && has("gui_running")
    "     noremap <C-TAB>   :bnext<CR>
