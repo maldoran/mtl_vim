@@ -3,7 +3,7 @@
     " Basics {
     "
         set nocompatible                   " Use ViMproved, don't emulate old vi
-     
+
      let $VIMHOME = $HOME . "/.vim"
 
     " }
@@ -20,33 +20,33 @@
 
 " Bundles {
 
-                Bundle 'scrooloose/nerdtree'
-                Bundle 'EvanDotPro/vim-zoom'
-                Bundle 'EvanDotPro/nerdtree-symlink'
-                Bundle 'kien/ctrlp.vim'
-                Bundle 'Lokaltog/vim-powerline', 'develop'
-                Bundle 'L9', '1.1'
-                Bundle 'FuzzyFinder', '4.2.2'
-                Bundle 'terryma/vim-multiple-cursors'
+    Bundle 'scrooloose/nerdtree'
+    Bundle 'EvanDotPro/vim-zoom'
+    Bundle 'EvanDotPro/nerdtree-symlink'
+    Bundle 'kien/ctrlp.vim'
+    Bundle 'Lokaltog/vim-powerline', 'develop'
+    Bundle 'L9', '1.1'
+    Bundle 'FuzzyFinder', '4.2.2'
+    Bundle 'terryma/vim-multiple-cursors'
 
-                Bundle 'Lucius', '7.1.1'
-                Bundle 'altercation/vim-colors-solarized'
-                Bundle 'spf13/vim-colors'
+    Bundle 'Lucius', '7.1.1'
+    Bundle 'altercation/vim-colors-solarized'
+    Bundle 'spf13/vim-colors'
 
-                Bundle 'tpope/vim-fugitive'
-                Bundle 'airblade/vim-gitgutter'
-                Bundle 'godlygeek/tabular'
-                Bundle 'mattn/webapi-vim'
-                Bundle 'mattn/gist-vim'
-                Bundle 'mattn/zencoding-vim'
-                Bundle 'tpope/vim-markdown'
-                Bundle 'scrooloose/syntastic', '3.0.0'
+    Bundle 'tpope/vim-fugitive'
+    Bundle 'airblade/vim-gitgutter'
+    Bundle 'godlygeek/tabular'
+    Bundle 'mattn/webapi-vim'
+    Bundle 'mattn/gist-vim'
+    Bundle 'mattn/zencoding-vim'
+    Bundle 'tpope/vim-markdown'
+    Bundle 'scrooloose/syntastic', '3.0.0'
 
-                " PHP syntax highlighting for 5.4, 5.5+
-                Bundle 'StanAngeloff/php.vim'
-                Bundle 'shawncplus/phpcomplete.vim'
-                Bundle 'EvanDotPro/php_getset.vim'
-                Bundle 'mikehaertl/pdv-standalone'
+    " PHP syntax highlighting for 5.4, 5.5+
+    Bundle 'StanAngeloff/php.vim'
+    Bundle 'shawncplus/phpcomplete.vim'
+    Bundle 'EvanDotPro/php_getset.vim'
+    Bundle 'mikehaertl/pdv-standalone'
 " }
 
 " General {
@@ -65,7 +65,6 @@
 " }
 
 " Vim UI {
-    
     let g:lucius_style='light'
 
     set shortmess+=I                       " Disable splash text
@@ -167,10 +166,10 @@
     map <leader>v "+gP
     map <leader>c "+y
 
-    " Save 
+    " Save
     map <C-s> :w<cr>
     imap <C-s> <ESC>:w<cr>a
-     
+
     " Ctrl-a for select all
     map <C-A> ggVG
 
@@ -191,7 +190,7 @@
    " endif
 
     " ZenCoding-vim
-        map <C-z> <C-y>,
+    map <C-z> <C-y>,
 
     " pdv-standalone
     nnoremap <C-\>p :call PhpDocSingle()<CR>
@@ -306,11 +305,11 @@
                     \ 'backup': 'backupdir',
                     \ 'views': 'viewdir',
                     \ 'swap': 'directory' }
- 
+
         if has('persistent_undo')
             let dir_list['undo'] = 'undodir'
         endif
- 
+
         for [dirname, settingname] in items(dir_list)
             let directory = parent . '/' . prefix . dirname . '/'
             if exists('*mkdir')
