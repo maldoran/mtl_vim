@@ -252,7 +252,7 @@
     " Source: http://vim.wikia.com/wiki/VimTip165
     " Cleanly deletes a buffer without messing up the window layout.
     " Modified by Evan to prompt for unsaved changes.
-    function s:Kwbd(kwbdStage)
+    function! s:Kwbd(kwbdStage)
       if(a:kwbdStage == 1)
         if(!buflisted(winbufnr(0)))
           bd!
