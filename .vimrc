@@ -61,6 +61,10 @@
     set hidden                " allow buffer switching without saving
     scriptencoding utf-8
     set encoding=utf-8
+    " force *.md to filetyp markdown
+    autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+    " open markdown file with Chrome.
+    autocmd BufEnter *.md exe 'noremap <f5> :!start "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" %:p<CR>'
     autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | lcd %:p:h | endif
    " autocmd VimEnter * execute "cd" fnameescape(g:startDir)
 
