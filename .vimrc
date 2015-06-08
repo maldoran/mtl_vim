@@ -22,7 +22,7 @@
 
     Bundle 'scrooloose/nerdtree'
     Bundle 'kien/ctrlp.vim'
-    Bundle 'Lokaltog/vim-powerline', 'develop'
+    Bundle 'bling/vim-airline'
     Bundle 'L9', '1.1'
     Bundle 'FuzzyFinder', '4.2.2'
     Bundle 'terryma/vim-multiple-cursors'
@@ -232,6 +232,12 @@
         let g:ctrlp_show_hidden = 1
     " }
 
+    " airline {
+        let g:airline_powerline_fonts = 1
+        let g:airline#extensions#tabline#enabled = 1
+        let g:airline#extensions#syntastic#enabled = 1
+        let g:airline#extensions#whitespace#enabled = 0
+    " }
 " }
 
 " Functions {
