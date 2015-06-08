@@ -21,8 +21,6 @@
 " Bundles {
 
     Bundle 'scrooloose/nerdtree'
-    Bundle 'EvanDotPro/vim-zoom'
-    Bundle 'EvanDotPro/nerdtree-symlink'
     Bundle 'kien/ctrlp.vim'
     Bundle 'Lokaltog/vim-powerline', 'develop'
     Bundle 'L9', '1.1'
@@ -36,10 +34,6 @@
     Bundle 'tpope/vim-fugitive'
     Bundle 'airblade/vim-gitgutter'
     Bundle 'godlygeek/tabular'
-    Bundle 'mattn/webapi-vim'
-    Bundle 'mattn/gist-vim'
-    Bundle 'mattn/zencoding-vim'
-    Bundle 'tpope/vim-markdown'
     Bundle 'scrooloose/syntastic', '3.0.0'
 
     " PHP syntax highlighting for 5.4, 5.5+
@@ -222,10 +216,6 @@
         let NERDTreeShowHidden=1
         let NERDTreeKeepTreeInNewTab=1
         let NERDTreeMinimalUI=1
-    " }
-
-    " vim-gist {
-        let g:gist_show_privates = 0
     " }
 
     " pdv-standalone {
