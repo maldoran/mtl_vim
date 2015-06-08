@@ -43,6 +43,7 @@
     Bundle 'mikehaertl/pdv-standalone'
 
     Bundle 'saltstack/salt-vim'
+    Bundle 'ervandew/supertab'
 " }
 
 " General {
@@ -254,6 +255,17 @@
         " This is not working yet
         "let g:syntastic_php_phpmd_exe="C:\\users\\cbeck\\php-qa\\phpmd.bat"
         "let g:syntastic_php_phpmd_post_args="xml c:\\~\\php-qa\phpmd.xml"
+    " }
+
+    " supertab {
+     "   if has("gui_running")
+     " This is not working :(
+            let g:SuperTabMappingForward = '<C-Space>'
+            let g:SuperTabMappingBackward = '<S-C-Space>'
+     "   else
+    "        let g:SuperTabMappingForward = '<nul>'
+    "        let g:SuperTabMappingBackward = '<s-nul>'
+    "    endif
     " }
     " phpcomplete {
         let g:phpcomplete_parse_docblock_comments = 1
