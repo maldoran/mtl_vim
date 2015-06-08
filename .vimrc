@@ -45,6 +45,8 @@
     Bundle 'mikehaertl/pdv-standalone'
 
     Bundle 'saltstack/salt-vim'
+
+    Bundle 'Lokaltog/vim-easymotion'
     Bundle 'ervandew/supertab'
     Bundle 'thinca/vim-localrc'
 
