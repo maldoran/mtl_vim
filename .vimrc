@@ -44,6 +44,9 @@
 
     Bundle 'saltstack/salt-vim'
     Bundle 'ervandew/supertab'
+    Bundle 'majutsushi/tagbar'
+    Bundle 'vim-php/tagbar-phpctags.vim'
+
 " }
 
 " General {
@@ -270,6 +273,16 @@
     " phpcomplete {
         let g:phpcomplete_parse_docblock_comments = 1
     " }
+
+    " tagbar {
+        let g:tagbar_ctags_bin = "C:\\~\\.vim\\bundle\\phpcomplete.vim\\bin\\ctags.exe"
+        nmap <F8> :TagbarToggle<CR>
+    "}
+
+    " phpctags {
+        let g:tagbar_phpctags_bin='C:\\~\\php-qa\\phpctags.bat'
+    " }
+
 " }
 
 " Functions {
