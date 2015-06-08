@@ -44,6 +44,8 @@
 
     Bundle 'saltstack/salt-vim'
     Bundle 'ervandew/supertab'
+    Bundle 'thinca/vim-localrc'
+
     Bundle 'stephpy/vim-php-cs-fixer'
 
     Bundle 'majutsushi/tagbar'
@@ -217,6 +219,8 @@
     " pdv-standalone
     nnoremap <C-\>p :call PhpDocSingle()<CR>
     vnoremap <C-\>p :call PhpDocRange()<CR>
+
+    map <leader>ctwms :silent !C:\~\.vim\bundle\phpcomplete.vim\bin\ctags.exe -f c:\~\git\LWHWMS\.ctags -R --fields=+aimS --languages=php C:\~\git\LWHWMS<CR>
 " }
 
 " Plugins {
