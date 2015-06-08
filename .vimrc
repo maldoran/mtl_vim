@@ -209,6 +209,9 @@
     " delete line
     map <C-d> dd
 
+    " Shift+Tab to
+    imap <S-Tab> <C-d>
+
     " Toggle between absolute and relative line numbers
     "nnoremap <C-n>
     map <C-n> :set rnu! <CR>
