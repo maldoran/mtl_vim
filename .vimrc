@@ -34,6 +34,8 @@
     Bundle 'tpope/vim-fugitive'
     Bundle 'airblade/vim-gitgutter'
     Bundle 'godlygeek/tabular'
+    Bundle 'mattn/emmet-vim'
+
     Bundle 'scrooloose/syntastic'
 
     " PHP syntax highlighting for 5.4, 5.5+
