@@ -200,6 +200,8 @@
     " Ctrl-b for fuzzy-buffer match
     map <C-B> :FufBuffer<CR>
     imap <C-B> <Esc>:FufBuffer<CR>
+    :nnoremap <Tab> :bnext<CR>
+    :nnoremap <S-Tab> :bprevious<CR>
 
     " delete line
     map <C-d> dd
@@ -210,12 +212,6 @@
 
     " For when you forget to sudo.. Really Write the file.
     cmap w!! w !sudo tee % >/dev/null
-
-    " Support buffer switch on tab even if MiniBufExplorer is not used
-   " if !vundle#hasBundle('minibufexpl') && has("gui_running")
-   "     noremap <C-TAB>   :bnext<CR>
-   "     noremap <C-S-TAB> :bprev<CR>
-   " endif
 
     " ZenCoding-vim
     map <C-z> <C-y>,
