@@ -44,6 +44,8 @@
 
     Bundle 'saltstack/salt-vim'
     Bundle 'ervandew/supertab'
+    Bundle 'stephpy/vim-php-cs-fixer'
+
     Bundle 'majutsushi/tagbar'
     Bundle 'vim-php/tagbar-phpctags.vim'
 
@@ -273,6 +275,14 @@
     "        let g:SuperTabMappingBackward = '<s-nul>'
     "    endif
     " }
+
+    " php-cs-fixer {
+        let g:php_cs_fixer_fixers_list = "indentation,linefeed,trailing_spaces,unused_use,phpdoc_params,short_tag,return,visibility,php_closing_tag,braces,extra_empty_lines,function_declaration,include,controls_spaces,elseif,eof_ending"
+        let g:php_cs_fixer_enable_default_mapping = 1     " Enable the mapping by default (<leader>pcd)
+        let g:php_cs_fixer_dry_run = 0                    " Call command with dry-run option
+        let g:php_cs_fixer_verbose = 1
+    " }
+
     " phpcomplete {
         let g:phpcomplete_parse_docblock_comments = 1
     " }
