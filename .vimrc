@@ -34,7 +34,7 @@
     Bundle 'tpope/vim-fugitive'
     Bundle 'airblade/vim-gitgutter'
     Bundle 'godlygeek/tabular'
-    Bundle 'scrooloose/syntastic', '3.0.0'
+    Bundle 'scrooloose/syntastic'
 
     " PHP syntax highlighting for 5.4, 5.5+
     Bundle 'StanAngeloff/php.vim'
@@ -244,6 +244,19 @@
         let g:airline#extensions#tabline#enabled = 1
         let g:airline#extensions#syntastic#enabled = 1
         let g:airline#extensions#whitespace#enabled = 0
+    " }
+    " syntastic {
+        let g:syntastic_always_populate_loc_list = 1
+        let g:syntastic_auto_loc_list = 1
+        let g:syntastic_php_checkers = ['php']
+        let g:syntastic_php_phpcs_exe="C:\\users\\cbeck\\php-qa\\phpcs.bat"
+        let g:syntastic_php_phpcs_args="--standard=c:\\~\\php-qa\\phpcs.xml"
+        " This is not working yet
+        "let g:syntastic_php_phpmd_exe="C:\\users\\cbeck\\php-qa\\phpmd.bat"
+        "let g:syntastic_php_phpmd_post_args="xml c:\\~\\php-qa\phpmd.xml"
+    " }
+    " phpcomplete {
+        let g:phpcomplete_parse_docblock_comments = 1
     " }
 " }
 
