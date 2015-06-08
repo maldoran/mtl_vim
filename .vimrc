@@ -203,6 +203,9 @@
     :nnoremap <Tab> :bnext<CR>
     :nnoremap <S-Tab> :bprevious<CR>
 
+    " Ctrl-p map prompt so you can put the directory in.
+    map <C-p> :CtrlP 
+
     " delete line
     map <C-d> dd
 
