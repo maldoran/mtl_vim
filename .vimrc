@@ -47,6 +47,7 @@
 
 " General {
 
+    set autochdir
     filetype plugin indent on " Automatically detect file types.
     syntax on                 " syntax highlighting
    " set mouse=a               " automatically enable mouse usage
@@ -69,7 +70,12 @@
 
     set shortmess+=I                       " Disable splash text
     set t_Co=256                           " Fix colors in the terminal
-    set guifont=Anonymous\ Pro\ 11         " Way better than monospace
+
+    if has("gui_gtk2")
+      set guifont=Anonymous\ Pro\ for\ Powerline\ 11
+    else
+      set guifont=Anonymice_Powerline:h11:cANSI
+    end
     silent color lucius                    " Vim colorscheme
     LuciusWhite
    "let g:Powerline_colorscheme = 'lucius' " Powerline colorscheme
@@ -84,6 +90,7 @@
 "        set guioptions-=m
 "        set guioptions+=LlRrb " bug?
 "        set guioptions-=LlRrb
+        set lines=43 columns=120
     endif
 
     set backspace=indent,eol,start " backspace for dummies
@@ -137,10 +144,10 @@
     imap <F1> <Esc>
 
     " Easier moving in tabs and windows
-    map <C-J> <C-W>j<C-W>_
-    map <C-K> <C-W>k<C-W>_
-    map <C-L> <C-W>l<C-W>_
-    map <C-H> <C-W>h<C-W>_
+    map <C-J> <C-W>j
+    map <C-K> <C-W>k
+    map <C-L> <C-W>l
+    map <C-H> <C-W>h
 
     " Wrapped lines goes down/up to next row, rather than next line in file.
     nnoremap j gj
@@ -222,8 +229,8 @@
         " use "" as parameter to turn tag off
         let g:pdv_cfg_php4guess=0
         let g:pdv_cfg_Package=" "
-        let g:pdv_cfg_Author=" "
-        let g:pdv_cfg_Version=" "
+        let g:pdv_cfg_Author="Chris Beck <cbeck@good-sam.com>"
+        let g:pdv_cfg_Version="1.0"
         "let g:pdv_cfg_Copyright=""
         "let g:pdv_cfg_License=""
     " }
