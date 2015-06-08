@@ -154,8 +154,8 @@
     map <C-H> <C-W>h
 
     " Wrapped lines goes down/up to next row, rather than next line in file.
-    nnoremap j gj
-    nnoremap k gk
+    "nnoremap j gj
+    "nnoremap k gk
 
     " Yank from the cursor to the end of the line, to be consistent with C and D.
     nnoremap Y y$
@@ -196,9 +196,12 @@
     " delete line
     map <C-d> dd
 
+    " Toggle between absolute and relative line numbers
+    "nnoremap <C-n>
+    map <C-n> :set rnu! <CR>
+
     " For when you forget to sudo.. Really Write the file.
     cmap w!! w !sudo tee % >/dev/null
-    "nmap <silent> <leader>www :w!!<CR> " this causes a nasty delay before saving
 
     " Support buffer switch on tab even if MiniBufExplorer is not used
    " if !vundle#hasBundle('minibufexpl') && has("gui_running")
