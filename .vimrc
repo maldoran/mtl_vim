@@ -28,8 +28,6 @@
     Bundle 'terryma/vim-multiple-cursors'
 
     Bundle 'Lucius', '7.1.1'
-    Bundle 'altercation/vim-colors-solarized'
-    Bundle 'spf13/vim-colors'
 
     Bundle 'tpope/vim-fugitive'
     Bundle 'airblade/vim-gitgutter'
