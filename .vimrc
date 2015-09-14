@@ -287,6 +287,8 @@
 
     " phpcomplete {
         let g:phpcomplete_parse_docblock_comments = 1
+        autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+        set completeopt=longest,menuone
     " }
 
     " tagbar {
