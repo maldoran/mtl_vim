@@ -20,7 +20,6 @@
 
 " Bundles {
 
-    Bundle 'scrooloose/nerdtree'
     Bundle 'kien/ctrlp.vim'
     Bundle 'bling/vim-airline'
     Bundle 'L9', '1.1'
@@ -228,19 +227,14 @@
 " }
 
 " Plugins {
-
-    " NerdTree {
-        map <C-e> :NERDTreeToggle<CR>
-        map <leader>e :NERDTreeFind<CR>
-        nmap <leader>nt :NERDTreeFind<CR>
-
-        let NERDTreeShowBookmarks=1
-        let NERDTreeChDirMode=0
-        let NERDTreeQuitOnOpen=1
-        let NERDTreeShowHidden=1
-        let NERDTreeKeepTreeInNewTab=1
-        let NERDTreeMinimalUI=1
-    " }
+    " netrw {
+        let g:netrw_liststyle = 3
+        let g:netrw_alto = 1
+        let g:netrw_altv = 1
+        let g:netrw_list_hide = ''
+        let g:netrw_sort_options = "i"
+        let g:netrw_mousemaps = 0
+    "}
 
     " pdv-standalone {
         " use "" as parameter to turn tag off
