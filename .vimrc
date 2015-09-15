@@ -52,6 +52,7 @@
     Bundle 'majutsushi/tagbar'
     Bundle 'vim-php/tagbar-phpctags.vim'
 
+    Bundle 'tpope/vim-vinegar'
 " }
 
 " General {
