@@ -53,6 +53,10 @@
     Bundle 'vim-php/tagbar-phpctags.vim'
 
     Bundle 'tpope/vim-vinegar'
+
+    Bundle 'SirVer/ultisnips'
+    Bundle 'honza/vim-snippets'
+
 " }
 
 " General {
@@ -228,6 +232,12 @@
 " }
 
 " Plugins {
+    " ultisnip {
+        map <leader>snipps :call UltiSnips#ListSnippets()<CR>
+        "let g:UltiSnipsExpandTrigger="<tab>"
+        "let g:UltiSnipsJumpForwardTrigger="<c-b>"
+        "let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+    " }
     " netrw {
         let g:netrw_liststyle = 3
         let g:netrw_alto = 1
