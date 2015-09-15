@@ -235,6 +235,7 @@
         let g:netrw_list_hide = ''
         let g:netrw_sort_options = "i"
         let g:netrw_mousemaps = 0
+        nnoremap <C-e> :enew<CR> :Explore<CR>
     "}
 
     " pdv-standalone {
