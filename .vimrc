@@ -125,8 +125,7 @@
     set list                       " use the listchars settings
     set listchars=tab:»\           " show tabs
     set colorcolumn=101
-    "color is for lucius dark
-    hi ColorColumn guibg=#292929
+    hi ColorColumn guibg=#F5F5F5
 
 " }
 
